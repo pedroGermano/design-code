@@ -22,6 +22,43 @@ body{
   line-height: 1.6;
 }
 
+h1, h2, h3{
+  line-height: 1;
+}
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .5em 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  margin-bottom: .5em;
+}
+
+.btn--primary{
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+
+}
+
+.btn--primary:hover{
+  background-color: var(--clr-dark);
+}
+
+.btn--outline {
+  outline: 3px solid var(--clr-primary);
+  outline-offset: -3px;
+  color: var(--clr-primary);
+}
+
+.btn--outline:hover{
+  background: var(--clr-primary);
+  color: var(--clr-light);
+}
+
 header{
   background-color: var(--clr-light);
   text-align: center;
@@ -111,7 +148,12 @@ header{
 }
 
 .main{
-  padding: 3em 1em;
+  padding: 3em 1em 5rem;
+}
+
+.main--ski{
+  background-image: url(../img/bg-moutain.png);
+  background-size: cover;
 }
 
 .main__title{
